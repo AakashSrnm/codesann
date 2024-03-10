@@ -34,7 +34,163 @@
         <pre><code>}</code></pre>
     </section>
 
-    <!-- Repeat the same structure for other C programs -->
-    
+    <section>
+        <h2>*Write A C Program to swap 2 values*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>main() {</code></pre>
+        <pre><code>    int a,b,temp;</code></pre>
+        <pre><code>    printf("Enter the Number:");</code></pre>
+        <pre><code>    scanf("%d%d",&a,&b);</code></pre>
+        <pre><code>    temp=a;</code></pre>
+        <pre><code>    a=b;</code></pre>
+        <pre><code>    b=temp;</code></pre>
+        <pre><code>    printf("Swapped Values Are:");</code></pre>
+        <pre><code>    printf("a=%d,b=%d",a,b);</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write A c program to check if a person is eligible to obtain a driving license*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>#include&lt;conio.h&gt;</code></pre>
+        <pre><code>main() {</code></pre>
+        <pre><code>    int age;</code></pre>
+        <pre><code>    printf("Enter Your Age:");</code></pre>
+        <pre><code>    scanf("%d",&age);</code></pre>
+        <pre><code>    if(age>=18) {</code></pre>
+        <pre><code>        printf("\n\nYou Are Eligible to Obtain a Driving License! Your License Number is 452-7AHJ");</code></pre>
+        <pre><code>    } else {</code></pre>
+        <pre><code>        printf("\n\nYou Are Not Eligible To Obtain A Driving License");</code></pre>
+        <pre><code>    }</code></pre>
+        <pre><code>    getch();</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write a C program to check the given number is even or odd*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>int main() {</code></pre>
+        <pre><code>    int number=0;</code></pre>
+        <pre><code>    printf("Enter The Number:");</code></pre>
+        <pre><code>    scanf("%d",&number);</code></pre>
+        <pre><code>    if(number% 2==0) {</code></pre>
+        <pre><code>        printf("%d is an Even Number", number);</code></pre>
+        <pre><code>    } else {</code></pre>
+        <pre><code>        printf("%d is an Odd Number", number);</code></pre>
+        <pre><code>    }</code></pre>
+        <pre><code>    return 0;</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write a C program to print the alphabet A to Z*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>#include&lt;conio.h&gt;</code></pre>
+        <pre><code>main() {</code></pre>
+        <pre><code>    int i;</code></pre>
+        <pre><code>    for(i=65;i<=90;i++) {</code></pre>
+        <pre><code>        printf("%c\n",i);</code></pre>
+        <pre><code>    }</code></pre>
+        <pre><code>    getch();</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write A C Program To add 2 integers*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>#include&lt;conio.h&gt;</code></pre>
+        <pre><code>int main() {</code></pre>
+        <pre><code>    int number1,number2,sum;</code></pre>
+        <pre><code>    printf("Enter 2 Integers:");</code></pre>
+        <pre><code>    scanf("%d%d",&number1,&number2);</code></pre>
+        <pre><code>    sum=number1+number2;</code></pre>
+        <pre><code>    printf("%d+%d=%d",number1,number2,sum);</code></pre>
+        <pre><code>    return 0;</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write a C program to Combine 2 Strings (Concatenation)*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>#include&lt;conio.h&gt;</code></pre>
+        <pre><code>#include&lt;string.h&gt;</code></pre>
+        <pre><code>void main() {</code></pre>
+        <pre><code>    char arr1[20], arr2[20];</code></pre>
+        <pre><code>    printf("Enter the first string:");</code></pre>
+        <pre><code>    scanf("%s", arr1);</code></pre>
+        <pre><code>    printf("Enter the second string:");</code></pre>
+        <pre><code>    scanf("%s", arr2);</code></pre>
+        <pre><code>    strcat(arr1,arr2);</code></pre>
+        <pre><code>    printf("The concatenated string is %s",arr1);</code></pre>
+        <pre><code>    getch();</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write a C program to count the length of a String*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>#include&lt;conio.h&gt;</code></pre>
+        <pre><code>#include&lt;string.h&gt;</code></pre>
+        <pre><code>void main() {</code></pre>
+        <pre><code>    int len;</code></pre>
+        <pre><code>    char str1[30]="Immunoelectrophoretically";</code></pre>
+        <pre><code>    len = strlen(str1);</code></pre>
+        <pre><code>    printf("The length of the string is %d",len);</code></pre>
+        <pre><code>    getch();</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write A C Program To find the area and circumference of a circle*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>main() {</code></pre>
+        <pre><code>    float radius,area,perimeter;</code></pre>
+        <pre><code>    printf("Enter the Radius of Circle:");</code></pre>
+        <pre><code>    scanf("%f",&radius);</code></pre>
+        <pre><code>    area=3.14*radius*radius;</code></pre>
+        <pre><code>    printf("\n\nThe Area Of the Circle with the radius %f",radius,area);</code></pre>
+        <pre><code>    printf("\n\nThe Circumference of the same circle is %f",perimeter);</code></pre>
+        <pre><code>    getch();</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write a C program to find the greatest of 3 numbers*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>#include&lt;conio.h&gt;</code></pre>
+        <pre><code>int main() {</code></pre>
+        <pre><code>    int a,b,c;</code></pre>
+        <pre><code>    printf("Enter Three Numbers:");</code></pre>
+        <pre><code>    scanf("%d%d%d",&a,&b,&c);</code></pre>
+        <pre><code>    if(a>b && a>c) {</code></pre>
+        <pre><code>        printf("%d is Largest",a);</code></pre>
+        <pre><code>    }</code></pre>
+        <pre><code>    if(b>a && b>c) {</code></pre>
+        <pre><code>        printf("%d is Largest",b);</code></pre>
+        <pre><code>    }</code></pre>
+        <pre><code>    if(c>a && c>b) {</code></pre>
+        <pre><code>        printf("%d is Largest",c);</code></pre>
+        <pre><code>    }</code></pre>
+        <pre><code>    if(a==b && a==c) {</code></pre>
+        <pre><code>        printf("All Are Equal");</code></pre>
+        <pre><code>    }</code></pre>
+        <pre><code>    return 0;</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
+    <section>
+        <h2>*Write A C program to display the string in upper case and lower case*</h2>
+        <pre><code>#include&lt;stdio.h&gt;</code></pre>
+        <pre><code>#include&lt;conio.h&gt;</code></pre>
+        <pre><code>main() {</code></pre>
+        <pre><code>    char string1[100] = "anyone who has never made a Mistake has never tried anything New.";</code></pre>
+        <pre><code>    strupr(string1);</code></pre>
+        <pre><code>    printf("Upper case: %s", string1);</code></pre>
+        <pre><code>    strlwr(string1);</code></pre>
+        <pre><code>    printf("\nLower case: %s", string1);</code></pre>
+        <pre><code>    getch();</code></pre>
+        <pre><code>}</code></pre>
+    </section>
+
 </body>
 </html>
